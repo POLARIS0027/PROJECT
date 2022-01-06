@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTextarea").value;
+  document.getElementById("naeyong").innerHTML = x;
+}
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title>원고지페이지</title>
+  </head>
+  <body>
+    <h3>원고지에 들어갈 부분 입력</h3>
+
+텍스트:<br>
+<textarea id="myTextarea">
+</textarea>
+
+<p>버튼을 누르면 텍스트 추출</p>
+
+<button type="button" onclick="myFunction()">추출</button>
+
+<p id="naeyong"></p>
+
+
+  </body>
+</html>
