@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var coworkers = {
+        "coolcool":"dew",
+        "cat1":"haul",
+        "cat2":"som",
+        "cat3":"ahri"
+      };
+      document.write("coolcool : "+coworkers.coolcool+"<br>");
+      document.write("cat : "+coworkers.cat1+"<br>");
+      document.write("cat : "+coworkers.cat2+"<br>");
+      document.write("cat : "+coworkers.cat3+"<br>");
+      coworkers.pain = "me";
+      document.write("pain : "+coworkers.pain+"<br>")
+
+    </script>
+    <h2>iterate</h2>
+    <script>
+      for(var key in coworkers){
+        document.write(key+' : '+coworkers[key] +'<br>');
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+      coworkers.showAll = function(){
+        for(var key in coworkers){
+        document.write(key+' : '+this[key]+'<br>');
+        }
+      }
+      coworkers.showAll();
+    </script>
+  </body>
+</html>
